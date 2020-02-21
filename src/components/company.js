@@ -39,8 +39,8 @@ const RecentWriting = () => {
         <Styled.p>
           Material X provides consultancy on material science using a
           combination of molecular dynamics and electronic-structure methods.
-          The scientific tools have been developed by the founders in the EU
-          project EXTMOS, and already validated in several peer-reviewed
+          The scientific tools have been developed by the founders in the <a href="https://cordis.europa.eu/project/id/646176">EU
+          project EXTMOS</a>, and already validated in several peer-reviewed
           publications.
         </Styled.p>
         <Img
@@ -53,18 +53,18 @@ const RecentWriting = () => {
           imgStyle={{ objectFit: "contain" }}
         />{" "}
         <Styled.p>
-          The MX approach is based on the MOLC coarse-grained model. In a
+          The MX approach is based on the <a href="https://doi.org/10.1039/C9CP04120F">MOLC coarse-grained model</a>. In a
           nutshell, atoms are replaced with large ellipsoidal particles
           increasing the computational efficiency and hiding the molecular
           structure, adding an additional level of security while deploying the
-          software. The MOLC model includes short-range dispersion interactions
+          software. The <a href="https://doi.org/10.1039/C9CP04120F">MOLC model</a> includes short-range dispersion interactions
           and long-range electrostatic interactions. Bonded ellipsoids interact
           via an effective potential acting on their position and orientation
-          simultaneously. As a result, the MOLC model delivers molecular
+          simultaneously. As a result, the <a href="https://doi.org/10.1039/C9CP04120F">MOLC model</a> delivers molecular
           morphology as accurate as traditional all-atom models, at a fraction
-          of the cost. The MX app/roach is suitable to simulating molecular
+          of the cost. The MX approach is suitable to simulating molecular
           functional materials, such as organic semiconductors, liquid crystals,
-          polymers, biomolecules, nd multi-component systems.a
+          polymers, biomolecules, and multi-component systems.
         </Styled.p>
       </div>
     </SectionWrapper>
