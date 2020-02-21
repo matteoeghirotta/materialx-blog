@@ -1,0 +1,49 @@
+{
+  "name": "materialx",
+  "description": "Company site",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Matteo Ricci <matteoeghirotta@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.19.12",
+    "gatsby-theme-catalyst-blog": "^0.8.0",
+    "gatsby-theme-catalyst-core": "^0.22.4",
+    "gatsby-theme-catalyst-header-top": "^0.2.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typeface-cooper-hewitt": "0.0.44",
+    "typeface-raleway": "^0.0.75"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^5.2.1",
+    "cypress": "^3.8.3",
+    "gatsby-cypress": "^0.2.22",
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
+    "start-server-and-test": "^1.10.8"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-plugin"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "start-server-and-test develop http://localhost:8000 cy:open",
+    "deploy": "gatsby build && gh-pages -d public",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteoeghirotta/materialx-blog"
+  },
+  "bugs": {
+    "url": "https://github.com/matteoeghirotta/materialx-blog/issues"
+  }
+}
