@@ -10,7 +10,14 @@ import { Button } from "@theme-ui/components"
 const RecentWriting = () => {
   const data = useStaticQuery(graphql`
     query {
-      welcomeImage: file(relativePath: { eq: "molc.png" }) {
+      welcomeImage: file(relativePath: { eq: "materialx_icon00.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1024) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      schemeCGImage: file(relativePath: { eq: "molc.png" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
@@ -36,6 +43,23 @@ const RecentWriting = () => {
           mx: "auto",
         }}
       >
+        <Img
+          sx={{
+            width: ["200px", "100%", null, null, null],
+            height: ["200px", "100%", null, null, null],
+          }}
+          fluid={data.welcomeImage.childImageSharp.fluid}
+          alt="MaterialX"
+          imgStyle={{ objectFit: "contain" }}
+        />{" "}
+        <Styled.p>
+          Material X limited is a company registered in UK with number 12476085.
+          Material X offers software for molecular modelling as a service. We
+          believe that science should be accessible to every human being, this
+          is why we use only open-source software. This is the reason why the
+          MOLC model was implemented in the open-source codes LAMMPS and
+          MOLTEMPLATE.
+        </Styled.p>
         <Styled.p>
           Material X provides consultancy on material science using a
           combination of molecular dynamics and electronic-structure methods.
@@ -48,7 +72,7 @@ const RecentWriting = () => {
             width: ["200px", "100%", null, null, null],
             height: ["200px", "100%", null, null, null],
           }}
-          fluid={data.welcomeImage.childImageSharp.fluid}
+          fluid={data.schemeCGImage.childImageSharp.fluid}
           alt="MaterialX"
           imgStyle={{ objectFit: "contain" }}
         />{" "}

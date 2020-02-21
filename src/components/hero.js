@@ -51,7 +51,7 @@ const Hero = () => {
               display: "inline",
             }}
           >
-            Molecular Modelling as a service
+            Molecular Modelling As A Service
           </Styled.h1>
         </div>
       </div>

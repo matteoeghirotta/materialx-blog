@@ -69,7 +69,7 @@ module.exports = {
       options: {
         displaySiteTitle: false,
         displaySiteTitleMobile: false,
-        invertSiteLogo: true,
+        invertSiteLogo: false,
         mobileMenuBreakpoint: "580px",
         useStickyHeader: true,
         assetPath: `content/site-assets`,
