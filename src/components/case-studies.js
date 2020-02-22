@@ -56,9 +56,8 @@ const SiteSection = () => {
             gridRow: ["2 / 3", null, "1 / 2", null, null],
           }}
         >
-          <Styled.h3 sx={{ mt: 0 }}>P3HT</Styled.h3>
-          <Styled.p>sample...</Styled.p>
-          <Styled.p>Semi-crystalline conducting polymers</Styled.p>
+          <Styled.h3 sx={{ mt: 0 }}>BPH</Styled.h3>
+          <Styled.p>Amorphous matrix organic semiconductors</Styled.p>
         </div>
         <Img
           sx={{
@@ -80,9 +79,8 @@ const SiteSection = () => {
             gridRow: ["4 / 5", null, "3 / 4", null, null],
           }}
         >
-          <Styled.h3>BPH</Styled.h3>
-          <Styled.p>boh...</Styled.p>
-          <Styled.p>Amorphous matrix organic semiconductors</Styled.p>
+          <Styled.h3 sx={{ mt: 0 }}>TCTA</Styled.h3>
+          <Styled.p>Layers and Interfaces</Styled.p>
         </div>
         <Img
           sx={{
@@ -104,9 +102,8 @@ const SiteSection = () => {
             gridRow: ["6 / 7", null, "4 / 5", null, null],
           }}
         >
-          <Styled.h3>aaaa</Styled.h3>
-          <Styled.p>boh..</Styled.p>
-          <Styled.p>Layers and Interfaces</Styled.p>
+          <Styled.h3 sx={{ mt: 0 }}>P3HT</Styled.h3>
+          <Styled.p>Semi-crystalline conducting polymers</Styled.p>
         </div>
         <Img
           sx={{
