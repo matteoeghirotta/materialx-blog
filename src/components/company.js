@@ -65,8 +65,8 @@ const RecentWriting = () => {
         </Styled.p>
         <Img
           sx={{
-            width: ["200px", "100%", null, null, null],
-            height: ["200px", "100%", null, null, null],
+            width: ["100%", "100%", null, null, null],
+            height: ["100%", "100%", null, null, null],
           }}
           fluid={data.schemeCGImage.childImageSharp.fluid}
           alt="MaterialX"
