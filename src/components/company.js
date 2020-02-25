@@ -41,8 +41,8 @@ const RecentWriting = () => {
       >
         <Img
           sx={{
-            width: ["100%", "100%", null, null, null],
-            height: ["100%", "100%", null, null, null],
+            width: [null, null, null, null, null],
+            height: [null, null, null, null, null],
           }}
           fluid={data.welcomeImage.childImageSharp.fluid}
           alt="MaterialX"
