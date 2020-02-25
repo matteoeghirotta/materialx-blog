@@ -74,7 +74,9 @@ const SiteSection = () => {
             backgroundSize: "cover",
           }}
         >
-          <Styled.p>Or if you prefer a direct call over the phone</Styled.p>
+          <Styled.p>
+            Or if you prefer we can have a direct call over the phone.
+          </Styled.p>
           <Button variant="primary" as="a" href="tel:+44-7513-309608">
             Call us
           </Button>
