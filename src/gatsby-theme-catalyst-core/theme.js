@@ -79,7 +79,7 @@ export default {
     logoWidthS: "76px", // Logo width on small screens, 480px - 768px
     logoWidthM: "76px", // Logo width on medium screens, 768px - 1024px
     logoWidthL: "92px", // Logo width on large screens, 1024px - 1440px
-    logoWidthXL: "92px", // Logo width on extra large screens, above 1440px
+    logoWidthXL: "180px", // Logo width on extra large screens, above 1440px
     logoHeightXS: "40px", // Logo height on extra small screens, up to 480px
     logoHeightS: "50px", // Logo height on small screens, 480px - 768px
     logoHeightM: "50px", // Logo height on medium screens, 768px - 1024px

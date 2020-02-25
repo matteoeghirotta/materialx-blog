@@ -17,7 +17,7 @@ const RecentWriting = () => {
           }
         }
       }
-      schemeCGImage: file(relativePath: { eq: "molc.png" }) {
+      schemeCGImage: file(relativePath: { eq: "anpd_gtoc3.png" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp

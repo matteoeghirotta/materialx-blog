@@ -9,9 +9,9 @@ const SectionWrapper = props => {
     <section
       sx={{
         backgroundColor: props.bg || "inherit",
-        backgroundImage: isDark
-          ? props.darkPattern || "none"
-          : props.pattern || "none",
+        // backgroundImage: isDark
+        //   ? props.darkPattern || "none"
+        //   : props.pattern || "none",
         px: 3,
         py: 5,
         width: "100vw",

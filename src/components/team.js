@@ -40,6 +40,7 @@ const SiteSection = () => {
       }
     }
   `)
+
   return (
     <SectionWrapper id="team" bg="accent">
       <SectionHeader>Team</SectionHeader>
@@ -58,7 +59,7 @@ const SiteSection = () => {
           link=""
           image={data.projectImage1.childImageSharp.fluid}
           title="Otello Maria Roscioni"
-          description="CEO"
+          description="CTO, founder"
         />
         <WorkCard
           link=""
