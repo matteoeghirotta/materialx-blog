@@ -28,11 +28,7 @@ const RecentWriting = () => {
   `)
 
   return (
-    <SectionWrapper
-      id="company"
-      // pattern={triangles}
-      // darkPattern={darkTriangles}
-    >
+    <SectionWrapper id="company">
       <SectionHeader>
         Connecting mesoscopic simulations to quantum mechanics
       </SectionHeader>
@@ -45,8 +41,8 @@ const RecentWriting = () => {
       >
         <Img
           sx={{
-            width: ["200px", "100%", null, null, null],
-            height: ["200px", "100%", null, null, null],
+            width: ["100%", "100%", null, null, null],
+            height: ["100%", "100%", null, null, null],
           }}
           fluid={data.welcomeImage.childImageSharp.fluid}
           alt="MaterialX"
