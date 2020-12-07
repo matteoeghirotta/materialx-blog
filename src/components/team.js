@@ -1,37 +1,35 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import SectionWrapper from "./section-wrapper"
 import SectionHeader from "./section-header"
 import WorkCard from "./team-card"
-// import { rain, darkRain } from "./patterns"
 
 const SiteSection = () => {
   const data = useStaticQuery(graphql`
     query {
-      projectImage1: file(relativePath: { eq: "otello_profile.jpg" }) {
+      projectImage1: file(relativePath: { eq: "sito2_otello.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      projectImage2: file(relativePath: { eq: "matteo_profile.jpg" }) {
+      projectImage2: file(relativePath: { eq: "sito2_matteo.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      projectImage3: file(relativePath: { eq: "francesco_profile.jpg" }) {
+      projectImage3: file(relativePath: { eq: "sito2_francesco.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      projectImage4: file(relativePath: { eq: "andres_profile.jpg" }) {
+      projectImage4: file(relativePath: { eq: "sito2_andres.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp

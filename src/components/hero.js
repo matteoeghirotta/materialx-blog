@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import BackgroundSection from "./section-background"
 import SectionWrapper from "./section-wrapper"
 

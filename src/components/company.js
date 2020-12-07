@@ -88,19 +88,18 @@ const RecentWriting = () => {
           polymers, biomolecules, and multi-component systems.
         </Styled.p>
       </div>
-      <div
+      <Video
         sx={{
-          maxWidth: "maxContentWidth",
-          mt: 5,
-          width: ["100%", "100%", null, null, null],
-          mx: "auto",
+          width: [null, null, null, null, null],
+          height: ["560px", "560px", "560px", "560px", "560px"],
         }}
-      >
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/VOGq9zyn9nE"
-          videoTitle="MOLC"
-        />
-      </div>
+        fluid={data.welcomeImage.childImageSharp.fluid}
+        imgStyle={{ objectFit: "contain" }}
+        videoSrcURL="https://www.youtube.com/embed/VOGq9zyn9nE"
+        videoTitle="MOLC"
+        height="100%"
+        width="100%"
+      />
     </SectionWrapper>
   )
 }
