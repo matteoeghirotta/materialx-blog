@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SectionWrapper from "./section-wrapper"
 import SectionHeader from "./section-header"
+import Video from "./video"
 // import { triangles, darkTriangles } from "./patterns"
 import { Button } from "@theme-ui/components"
 
@@ -87,6 +88,10 @@ const RecentWriting = () => {
           polymers, biomolecules, nd multi-component systems.a
         </Styled.p>
       </div>
+      <Video
+        videoSrcURL="https://www.youtube.com/embed/XrRcfaWutLQ"
+        videoTitle="MOLC"
+      />
     </SectionWrapper>
   )
 }
