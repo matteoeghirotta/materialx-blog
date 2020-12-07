@@ -83,13 +83,13 @@ const RecentWriting = () => {
           via an effective potential acting on their position and orientation
           simultaneously. As a result, the MOLC model delivers molecular
           morphology as accurate as traditional all-atom models, at a fraction
-          of the cost. The MX app/roach is suitable to simulating molecular
+          of the cost. The MX approach is suitable to simulating molecular
           functional materials, such as organic semiconductors, liquid crystals,
-          polymers, biomolecules, nd multi-component systems.a
+          polymers, biomolecules, and multi-component systems.
         </Styled.p>
       </div>
       <Video
-        videoSrcURL="https://www.youtube.com/embed/XrRcfaWutLQ"
+        videoSrcURL="https://www.youtube.com/embed/VOGq9zyn9nE"
         videoTitle="MOLC"
       />
     </SectionWrapper>
