@@ -56,25 +56,25 @@ const SiteSection = () => {
         }}
       >
         <WorkCard
-          link=""
+          link="https://www.linkedin.com/in/otello-maria-roscioni-a0444232/"
           image={data.projectImage1.childImageSharp.fluid}
           title="Otello Maria Roscioni"
           description="CTO, founder"
         />
         <WorkCard
-          link=""
+          link="https://www.linkedin.com/in/matteo-matteo-ricci-04a12a3b/"
           image={data.projectImage2.childImageSharp.fluid}
           title="Matteo Ricci"
           description="CTO"
         />
         <WorkCard
-          link=""
+          link="https://www.linkedin.com/in/frfiorini/"
           image={data.projectImage3.childImageSharp.fluid}
           title="Francesco Fiorini"
           description="Business Development"
         />
         <WorkCard
-          link=""
+          link="https://www.linkedin.com/in/andres-felipe-rendon-18311830/"
           image={data.projectImage4.childImageSharp.fluid}
           title="Andrés Rendón"
           description="Business Development"
