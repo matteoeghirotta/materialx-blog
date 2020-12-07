@@ -40,7 +40,8 @@ const Card = props => {
       </div>
       <Img
         sx={{
-          width: "300px",
+          width: "auto",
+          margin: "20% 20px 0 20px",
           flex: ["0", null, null, "1", null],
         }}
         fluid={props.image}
