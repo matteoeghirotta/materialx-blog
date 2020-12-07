@@ -90,15 +90,13 @@ const RecentWriting = () => {
       </div>
       <Video
         sx={{
-          width: [null, null, null, null, null],
+          width: ["90%", "90%", "90%", "90%", "90%"],
           height: ["560px", "560px", "560px", "560px", "560px"],
         }}
         fluid={data.welcomeImage.childImageSharp.fluid}
         imgStyle={{ objectFit: "contain" }}
         videoSrcURL="https://www.youtube.com/embed/VOGq9zyn9nE"
         videoTitle="MOLC"
-        height="100%"
-        width="100%"
       />
     </SectionWrapper>
   )
