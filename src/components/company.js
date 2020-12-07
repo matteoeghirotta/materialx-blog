@@ -92,6 +92,7 @@ const RecentWriting = () => {
         sx={{
           maxWidth: "maxContentWidth",
           mt: 5,
+          width: ["100%", "100%", null, null, null],
           mx: "auto",
         }}
       >
