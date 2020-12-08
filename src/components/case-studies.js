@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { graphql, useStaticQuery } from "gatsby"
-import CaseStudyCard from "./casestudy-card"
-import SectionWrapper from "./section-wrapper"
-import SectionHeader from "./section-header"
+import { jsx } from 'theme-ui'
+import { graphql, useStaticQuery } from 'gatsby'
+import CaseStudyCard from './casestudy-card'
+import SectionWrapper from './section-wrapper'
+import SectionHeader from './section-header'
 // import { contours, darkContours } from "./patterns"
 
 const SiteSection = () => {
@@ -16,21 +16,27 @@ const SiteSection = () => {
           }
         }
       }
-      aboutImage2: file(relativePath: { eq: "drop_casting_small_2.png" }) {
+      aboutImage2: file(
+        relativePath: { eq: "drop_casting_small_2.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      aboutImage3: file(relativePath: { eq: "p3ht_sample04_05_last.png" }) {
+      aboutImage3: file(
+        relativePath: { eq: "p3ht_sample04_05_last.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      aboutImage4: file(relativePath: { eq: "int01_anpd_sptadwt2_01.png" }) {
+      aboutImage4: file(
+        relativePath: { eq: "int01_anpd_sptadwt2_01.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -45,13 +51,13 @@ const SiteSection = () => {
       <SectionHeader>Case Studies</SectionHeader>
       <div
         sx={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 1fr",
-          gridTemplateRows: "auto",
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr 1fr 1fr',
+          gridTemplateRows: 'auto',
           gridGap: 4,
           // maxWidth: "1024px",
-          margin: "0 auto",
-          pt: 5,
+          margin: '0 auto',
+          pt: 5
         }}
       >
         <CaseStudyCard
@@ -81,11 +87,11 @@ const SiteSection = () => {
       </div>
       <div
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: ["100px", null, "200px", null, null],
-          margin: "0 auto",
-          pt: 5,
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: ['100px', null, '200px', null, null],
+          margin: '0 auto',
+          pt: 5
         }}
       ></div>
     </SectionWrapper>

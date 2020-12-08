@@ -6,14 +6,15 @@ module.exports = {
     // Can I remove these now?
     ecmaFeatures: {
       impliedStrict: true,
-      classes: true,
-    },
+      jsx: true,
+      classes: true
+    }
   },
   env: {
     browser: true,
     node: true,
     jquery: true,
-    jest: true,
+    jest: true
   },
   rules: {
     'no-debugger': 0,
@@ -24,33 +25,33 @@ module.exports = {
       2,
       'ForInStatement',
       'LabeledStatement',
-      'WithStatement',
+      'WithStatement'
     ],
     'no-unused-vars': [
       1,
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
-      },
+        argsIgnorePattern: 'res|next|^err'
+      }
     ],
     'prefer-const': [
       'error',
       {
-        destructuring: 'all',
-      },
+        destructuring: 'all'
+      }
     ],
     'arrow-body-style': [2, 'as-needed'],
     'no-unused-expressions': [
       2,
       {
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
     'no-param-reassign': [
       2,
       {
-        props: false,
-      },
+        props: false
+      }
     ],
     'no-console': 0,
     'import/prefer-default-export': 0,
@@ -69,34 +70,34 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
     'jsx-a11y/accessible-emoji': 0,
-    "jsx-a11y/label-has-associated-control": [
-      "error",
+    'jsx-a11y/label-has-associated-control': [
+      'error',
       {
-        "assert": "either"
+        assert: 'either'
       }
     ],
     'react/require-default-props': 0,
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx'],
-      },
+        extensions: ['.js', '.jsx']
+      }
     ],
     radix: 0,
     'no-shadow': [
       2,
       {
         hoist: 'all',
-        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
-      },
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error']
+      }
     ],
     quotes: [
       2,
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
-      },
+        allowTemplateLiterals: true
+      }
     ],
     'prettier/prettier': [
       'error',
@@ -106,18 +107,18 @@ module.exports = {
         printWidth: 80,
         //below line only for windows users facing CLRF and eslint/prettier error
         // non windows users feel free to delete it
-        endOfLine: 'auto',
-      },
+        endOfLine: 'auto'
+      }
     ],
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/anchor-is-valid': [
       'warn',
       {
-        aspects: ['invalidHref'],
-      },
+        aspects: ['invalidHref']
+      }
     ],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'warn'
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
-};
+  plugins: ['html', 'prettier', 'react-hooks']
+}
