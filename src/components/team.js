@@ -57,7 +57,7 @@ const SiteSection = () => {
           link="https://www.linkedin.com/in/otello-maria-roscioni-a0444232/"
           image={data.projectImage1.childImageSharp.fluid}
           title="Otello Maria Roscioni"
-          description="CTO, founder"
+          description="CEO, founder"
         />
         <WorkCard
           link="https://www.linkedin.com/in/matteo-matteo-ricci-04a12a3b/"
