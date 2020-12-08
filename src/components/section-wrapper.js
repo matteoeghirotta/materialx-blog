@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx, useColorMode } from "theme-ui"
 
-const SectionWrapper = props => {
+const SectionWrapper = (props) => {
   const [mode] = useColorMode()
-  const isDark = mode === "dark"
+  // const isDark = mode === "dark"
 
   return (
     <section

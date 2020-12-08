@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled, useColorMode } from "theme-ui"
+import { jsx } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import CaseStudyCard from "./casestudy-card"
 import SectionWrapper from "./section-wrapper"
@@ -40,9 +40,6 @@ const SiteSection = () => {
     }
   `)
 
-  const [mode] = useColorMode()
-  const isDark = mode === "dark"
-
   return (
     <SectionWrapper id="case-studies">
       <SectionHeader>Case Studies</SectionHeader>
@@ -73,7 +70,7 @@ const SiteSection = () => {
           link=""
           image={data.aboutImage3.childImageSharp.fluid}
           title=""
-          description="Amorphous matrix organic semiconductors."
+          description="Amorphous and semi-crystalline polymers."
         />
         <CaseStudyCard
           link=""
