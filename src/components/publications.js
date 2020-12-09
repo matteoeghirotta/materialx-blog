@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { Link } from 'gatsby'
 import { jsx, Styled } from 'theme-ui'
 import SectionWrapper from './section-wrapper'
 import SectionHeader from './section-header'
@@ -15,14 +14,18 @@ const ScientificPublications = () => (
       }}
     >
       <Styled.p>
-        1. MOLC. A reversible coarse grained approach using
-        anisotropic beads for the modelling of organic functional
-        materials https://doi.org/10.1039/c9cp04120f
+        <Styled.a href="https://doi.org/10.1039/c9cp04120f">
+          1. MOLC. A reversible coarse grained approach using
+          anisotropic beads for the modelling of organic functional
+          materials (2019).
+        </Styled.a>
       </Styled.p>
+
       <Styled.p>
-        2. Design Rules to Maximize Charge-Carrier Mobility along
-        Conjugated Polymer Chains
-        https://doi.org/10.1021/acs.jpclett.0c01793
+        <Styled.a href="https://doi.org/10.1021/acs.jpclett.0c01793">
+          2. Design Rules to Maximize Charge-Carrier Mobility along
+          Conjugated Polymer Chains (2020).
+        </Styled.a>
       </Styled.p>
       <Styled.p>
         3. Moltemplate: A Tool for Ultra-Coarse-Grained Modeling of
