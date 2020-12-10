@@ -95,6 +95,8 @@ const RecentWriting = () => {
         <Video
           sx={{
             maxWidth: 'maxContentWidth',
+            height: '450px',
+            // width: ['100%', '100%', '100%', '100%', '100%'],
             mt: 5,
             mx: 'auto'
           }}

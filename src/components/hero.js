@@ -1,20 +1,24 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
-import { graphql, useStaticQuery } from "gatsby"
-import BackgroundSection from "./section-background"
-import SectionWrapper from "./section-wrapper"
+import { jsx, Styled } from 'theme-ui'
+import { graphql, useStaticQuery } from 'gatsby'
+import BackgroundSection from './section-background'
+import SectionWrapper from './section-wrapper'
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      welcomeImage: file(relativePath: { eq: "materialx_icon01.png" }) {
+      welcomeImage: file(
+        relativePath: { eq: "materialx_icon01.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      backgroundImage: file(relativePath: { eq: "t6_map_2models.png" }) {
+      backgroundImage: file(
+        relativePath: { eq: "materialx_icon00.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1024) {
             ...GatsbyImageSharpFluid_withWebp
@@ -28,10 +32,11 @@ const Hero = () => {
     <SectionWrapper bg="accent">
       <div
         sx={{
-          display: "grid",
-          width: "auto",
-          height: "200px",
-          backgroundImage: data.backgroundImage.childImageSharp.fluid,
+          display: 'grid',
+          width: 'auto',
+          height: '200px',
+          backgroundImage:
+            data.backgroundImage.childImageSharp.fluid,
           // gridTemplateColumns: [
           //   "1fr",
           //   "180px minmax(auto, 400px)",
@@ -40,15 +45,15 @@ const Hero = () => {
           //   null,
           // ],
           // gridGap: 4,
-          alignItems: "center",
-          justifyItems: "center",
-          justifyContent: "center",
+          alignItems: 'center',
+          justifyItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <Styled.h1
           sx={{
             fontSize: [4, null, null, 5, null],
-            display: "inline",
+            display: 'inline'
           }}
         >
           Molecular Modelling As A Service

@@ -1,7 +1,14 @@
 import React from 'react'
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  <div className="video">
+  <div
+    class="videoWrapper"
+    sx={{
+      position: 'relative',
+      paddingBottom: '56.25%',
+      height: '0'
+    }}
+  >
     <iframe
       src={videoSrcURL}
       title={videoTitle}
@@ -11,6 +18,11 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      position="absolute"
+      top="0"
+      left="0"
+      width="560"
+      height="315"
     />
   </div>
 )
