@@ -93,13 +93,6 @@ const RecentWriting = () => {
           multi-component systems.
         </Styled.p>
         <Video
-          sx={{
-            maxWidth: 'maxContentWidth',
-            height: '450px',
-            // width: ['100%', '100%', '100%', '100%', '100%'],
-            mt: 5,
-            mx: 'auto'
-          }}
           videoSrcURL="https://www.youtube.com/embed/VOGq9zyn9nE"
           videoTitle="The MOLC model explained in one minute"
         />
