@@ -17,7 +17,7 @@ const SiteSection = () => {
         }
       }
       aboutImage2: file(
-        relativePath: { eq: "drop_casting_small_2.png" }
+        relativePath: { eq: "drop_casting_small_3.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 500) {
