@@ -4,15 +4,30 @@
   "private": true,
   "version": "1.0.0",
   "author": "Matteo Ricci <matteoeghirotta@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "start-server-and-test develop http://localhost:8000 cy:open",
+    "deploy": "gh-pages-with-token -d public",
+    "cy:open": "cypress open",
+    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.12",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.7.0",
+    "gatsby-plugin-google-gtag": "^4.16.0",
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-theme-catalyst-blog": "^0.8.0",
     "gatsby-theme-catalyst-core": "^0.22.4",
     "gatsby-theme-catalyst-header-top": "^0.2.3",
+    "gh-pages-with-token": "^1.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.1",
@@ -52,19 +67,6 @@
     "gatsby-plugin"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "gatsby clean",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "start-server-and-test develop http://localhost:8000 cy:open",
-    "deploy": "gatsby build && gh-pages -d public",
-    "cy:open": "cypress open",
-    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
-    "build-storybook": "NODE_ENV=production build-storybook -s public"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/matteoeghirotta/materialx-blog"
